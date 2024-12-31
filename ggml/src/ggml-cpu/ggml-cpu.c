@@ -118,7 +118,7 @@ struct ggml_arm_arch_features_type {
 #endif
 
 
-#if defined(_WIN32)
+#if 0 && defined(_WIN32)
 
 #define WIN32_LEAN_AND_MEAN
 #ifndef NOMINMAX
@@ -1233,7 +1233,7 @@ static inline void __lsx_f16x4_store(ggml_fp16_t * x, __m128 y) {
 
 typedef pthread_t          ggml_thread_t;
 
-#if defined(_WIN32)
+#if 0 && defined(_WIN32)
 
 typedef CONDITION_VARIABLE ggml_cond_t;
 typedef SRWLOCK            ggml_mutex_t;

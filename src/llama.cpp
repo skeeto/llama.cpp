@@ -9718,7 +9718,7 @@ static bool llm_load_tensors(
 
     ml.done_getting_tensors();
 
-    ml.init_mappings(true, use_mlock ? &model.mlock_mmaps : nullptr);
+    ml.init_mappings(false, use_mlock ? &model.mlock_mmaps : nullptr);
     model.mappings.reserve(ml.mappings.size());
 
     // create the backend buffers
