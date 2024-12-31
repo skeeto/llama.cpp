@@ -342,7 +342,6 @@ static llama_tokens format_infill(
     embd_inp.insert(embd_inp.begin(), extra_tokens.end() - n_extra_take, extra_tokens.end());
 
     embd_inp.insert(embd_inp.end(), embd_end.begin(), embd_end.end());
-    embd_inp.push_back(llama_token_fim_mid(model));
 
     return embd_inp;
 }
